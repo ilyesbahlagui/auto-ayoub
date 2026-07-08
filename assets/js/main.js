@@ -1,12 +1,10 @@
-/**
- * HAL AUTO - Main JavaScript
- * Smooth scroll, fade-in animations, mobile menu, scroll-to-top, and lazy loading
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-  // ===================================
-  // LAZY LOADING IMAGES
-  // ===================================
+  const footerYear = document.getElementById('footerYear');
+
+  if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+  }
+
   const lazyImages = document.querySelectorAll('img[loading="lazy"]');
 
   lazyImages.forEach(img => {
@@ -18,9 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-  // ===================================
-  // MOBILE MENU TOGGLE
-  // ===================================
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
 
@@ -37,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Close menu when clicking a link
     nav.querySelectorAll('.header__nav-link').forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('is-active');
@@ -48,9 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===================================
-  // FADE-IN ON SCROLL (IntersectionObserver)
-  // ===================================
   const fadeElements = document.querySelectorAll('.fade-in');
 
   if (fadeElements.length > 0) {
@@ -72,9 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => observer.observe(el));
   }
 
-  // ===================================
-  // SMOOTH SCROLL FOR ANCHOR LINKS
-  // ===================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href');
@@ -94,9 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ===================================
-  // HEADER SHADOW ON SCROLL
-  // ===================================
   const header = document.querySelector('.header');
 
   if (header) {
@@ -109,9 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===================================
-  // CLOSE MOBILE MENU ON CLICK OUTSIDE
-  // ===================================
   document.addEventListener('click', (e) => {
     if (nav && nav.classList.contains('is-active')) {
       if (!nav.contains(e.target) && !burger.contains(e.target)) {
@@ -123,13 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ===================================
-  // SCROLL TO TOP BUTTON
-  // ===================================
   const scrollTopBtn = document.getElementById('scrollTop');
 
   if (scrollTopBtn) {
-    // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
       if (window.scrollY > 400) {
         scrollTopBtn.classList.add('is-visible');
@@ -138,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Scroll to top on click
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({
         top: 0,
