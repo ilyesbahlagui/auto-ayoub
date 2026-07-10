@@ -267,7 +267,7 @@ address {
 
 .hero {
   position: relative;
-  margin-top: 70px!important;
+  margin-top: 70px !important;
   min-height: 70vh;
   width: 100%;
   display: flex;
@@ -974,8 +974,8 @@ address {
 }
 
 .footer__contact-phone a:hover,
-.footer__contact-email a:hover {
-  color: var(--color-accent);
+.footer__contact-email a:hover, .footer__contact-address a:hover {
+  color: var(--color-accent)!important;
 }
 
 .footer__bottom {
@@ -1024,14 +1024,33 @@ address {
   transform: translateY(0);
 }
 
-.services__grid .service-card:nth-child(1) { transition-delay: 0s; }
-.services__grid .service-card:nth-child(2) { transition-delay: 0.1s; }
-.services__grid .service-card:nth-child(3) { transition-delay: 0.2s; }
-.services__grid .service-card:nth-child(4) { transition-delay: 0.3s; }
+.services__grid .service-card:nth-child(1) {
+  transition-delay: 0s;
+}
 
-.reassurance__container .reassurance__card:nth-child(1) { transition-delay: 0s; }
-.reassurance__container .reassurance__card:nth-child(2) { transition-delay: 0.1s; }
-.reassurance__container .reassurance__card:nth-child(3) { transition-delay: 0.2s; }
+.services__grid .service-card:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.services__grid .service-card:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.services__grid .service-card:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.reassurance__container .reassurance__card:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.reassurance__container .reassurance__card:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.reassurance__container .reassurance__card:nth-child(3) {
+  transition-delay: 0.2s;
+}
 
 .scroll-top {
   position: fixed;
