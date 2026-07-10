@@ -11,9 +11,9 @@
   <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tondomaine.fr/" />
-  <meta property="og:title" content="HAL AUTO | Garage Automobile à Nîmes" />
+  <meta property="og:title" content="HAL AUTO - Garage Automobile à Nîmes" />
   <meta property="og:description"
-    content="Entretien, révision, diagnostic électronique et réparation mécanique. Devis transparent, appelez-nous dès aujourd'hui !" />
+    content="Entretien, révision, diagnostic, électronique et réparation mécanique. Devis transparent, appelez-nous dès aujourd'hui !" />
   <meta property="og:image" content="https://tondomaine.fr/assets/images/a-propos.jpg" />
   <meta property="og:locale" content="fr_FR" />
 
@@ -25,32 +25,42 @@
     content="Entretien, révision, diagnostic électronique et réparation mécanique. Devis transparent, appelez-nous dès aujourd'hui !" />
   <meta name="twitter:image" content="https://tondomaine.fr/assets/images/a-propos.jpg" />
 
-  <title>HAL AUTO | Garage Automobile à Nîmes</title>
+  <title>HAL AUTO - Garage Automobile à Nîmes</title>
   <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRepair",
-      "name": "HAL AUTO",
-      "image": "https://tondomaine.fr/assets/images/a-propos.jpg",
-      "telephone": "+33412345678",
-      "email": "contact@halauto.fr",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Rue de l'Automobile",
-        "addressLocality": "Nîmes",
-        "postalCode": "30000",
-        "addressCountry": "FR"
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "HAL AUTO",
+    "image": "https://tondomaine.fr/assets/images/a-propos.jpg",
+    "telephone": ["+33449050536", "+33751304588"],
+    "email": "hal.auto30@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 Chemin du Mas de Cheylon, 30900 Nîmes",
+      "addressLocality": "Nîmes",
+      "postalCode": "30900",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { 
+        "@type": "OpeningHoursSpecification", 
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], 
+        "opens": "08:00", 
+        "closes": "18:00" 
       },
-      "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "12:00" }
-      ],
-      "priceRange": "$$",
-      "url": "https://tondomaine.fr"
-    }
-    </script>
+      { 
+        "@type": "OpeningHoursSpecification", 
+        "dayOfWeek": "Saturday", 
+        "opens": "08:30", 
+        "closes": "12:00" 
+      }
+    ],
+    "priceRange": "$$",
+    "url": "https://tondomaine.fr"
+  }
+  </script>
 </head>
 
 <body>
@@ -59,7 +69,7 @@
       <a href="#accueil" class="header__logo">
 
         <!-- <i class="fa-solid fa-car"></i> -->
-        <span class="header__logo-text">H.A.L AUTO</span>
+        <span class="header__logo-text"><span class="brand-hal">HAL</span> <span class="brand-auto">AUTO</span></span>
       </a>
       <button class="header__burger" id="burger" aria-label="Menu">
         <i class="fa-solid fa-bars"></i>
@@ -89,7 +99,7 @@
       <div class="hero__content">
         <p class="hero__subtitle">
           <i class="fa-solid fa-wrench"></i>
-          Bienvenue chez H.A.L AUTO
+          Bienvenue chez HAL AUTO
         </p>
         <h1 class="hero__title">Garage automobile à Nîmes : Votre partenaire de confiance</h1>
         <p class="hero__text">
@@ -196,11 +206,16 @@
             <img src="assets/images/service-diagnostique.jpg" alt="Diagnostic électronique véhicule" loading="lazy" />
           </div>
           <div class="service-card__content">
-            <h3 class="service-card__title">Diagnostic Électronique</h3>
+            <h3 class="service-card__title">Diagnostic & Électronique</h3>
             <p class="service-card__text">
               Voyant allumé ? Notre <strong>valise de diagnostic dernière génération</strong> lit les codes défauts
-              moteur, ABS et airbag avec une <strong>précision chirurgicale</strong> pour identifier la panne
-              rapidement.
+              moteur, ABS et
+              airbag avec une <strong>précision chirurgicale</strong> pour identifier la panne rapidement. Spécialistes
+              en
+              <strong>électricité automobile</strong>, nous assurons la <strong>programmation</strong> et
+              l'<strong>adaptation de
+                modules</strong> neufs et occasion, ainsi que la <strong>remise à zéro des voyants</strong> après
+              réparation.
             </p>
             <a href="#contact" class="service-card__cta">Contactez-nous →</a>
           </div>
@@ -230,7 +245,7 @@
           <div class="service-card__content">
             <h3 class="service-card__title">Climatisation & Visibilité</h3>
             <p class="service-card__text">
-              <strong>Recharge de gaz</strong> et <strong>recherche de fuite</strong> pour un air frais toute l'année.
+              <strong>Recharge de gaz</strong> pour un air frais toute l'année.
               Nous gérons aussi votre visibilité : remplacement d'<strong>essuie-glaces</strong> et contrôle de
               l'<strong>éclairage</strong> pour rouler en toute sécurité.
             </p>
@@ -264,7 +279,8 @@
             <h3 class="service-card__title">Dépollution & Échappement</h3>
             <p class="service-card__text">
               Nettoyage et remplacement de <strong>vanne EGR</strong>, régénération <strong>FAP</strong>, diagnostic des
-              pertes de puissance et système d'échappement.
+              pertes de puissance, ainsi que l'entretien du <strong>système de dépollution</strong> et du
+              <strong>circuit AdBlue</strong>.
             </p>
             <a href="#contact" class="service-card__cta">Contactez-nous →</a>
           </div>
@@ -305,10 +321,16 @@
             </div>
             <h3 class="contact__cta-title">Besoin d'un Devis ou d'un RDV ?</h3>
             <p class="contact__cta-text">Cliquez ci-dessous pour nous appeler directement :</p>
-            <a href="tel:0412345678" class="btn btn--primary btn--large">
-              <i class="fa-solid fa-phone"></i>
-              04 12 34 56 78
-            </a>
+            <div class="contact__cta-actions">
+              <a href="tel:0449050536" class="btn btn--primary btn--large">
+                <i class="fa-solid fa-phone"></i>
+                04 49 05 05 36
+              </a>
+              <a href="tel:0751304588" class="btn btn--outline btn--large">
+                <i class="fa-solid fa-phone"></i>
+                07 51 30 45 88
+              </a>
+            </div>
           </div>
           <div class="contact__card contact__card--email">
             <div class="contact__card-icon">
@@ -316,8 +338,8 @@
             </div>
             <div class="contact__card-content">
               <h3 class="contact__card-title">Email</h3>
-              <a href="mailto:contact@halauto.fr" class="contact__card-link">
-                contact@halauto.fr
+              <a href="mailto:hal.auto30@gmail.com" class="contact__card-link">
+                hal.auto30@gmail.com
               </a>
             </div>
           </div>
@@ -331,11 +353,11 @@
               <ul class="contact__hours">
                 <li class="contact__hours-item">
                   <span class="contact__hours-days">Lundi - Vendredi</span>
-                  <span class="contact__hours-time">8h - 12h / 14h - 18h</span>
+                  <span class="contact__hours-time">9h - 12h / 14h - 18h</span>
                 </li>
                 <li class="contact__hours-item">
                   <span class="contact__hours-days">Samedi</span>
-                  <span class="contact__hours-time">8h30 - 12h00</span>
+                  <span class="contact__hours-time">9h - 12h00</span>
                 </li>
                 <li class="contact__hours-item">
                   <span class="contact__hours-days contact__hours-days--closed">Dimanche</span>
@@ -355,15 +377,15 @@
               <h3 class="contact__card-title">Notre Adresse</h3>
               <address class="contact__card-address">
                 HAL AUTO<br />
-                123 Rue de l'Automobile<br />
-                30000 Nîmes
+                101 Chemin du mas de cheylon<br />
+                30900 Nîmes
               </address>
             </div>
           </div>
 
           <div class="contact__map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46314.2785465!2d4.34!3d43.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b42d67d30a2ce1%3A0x40819e5f2b7d0f0!2sN%C3%AEmes!5e0!3m2!1sfr!2sfr!4v1699999999999!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps?q=101+Chemin+du+Mas+de+Cheylon,+30900+N%C3%AEmes&output=embed"
               width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade" title="Localisation du garage HAL AUTO à Nîmes">
             </iframe>
@@ -378,13 +400,14 @@
       <div class="footer__brand">
         <a href="#accueil" class="footer__logo">
           <i class="fa-solid fa-car"></i>
-          <span>HAL AUTO</span>
+          <span><span class="brand-hal">HAL</span> <span class="brand-auto">AUTO</span></span>
         </a>
         <p class="footer__tagline">
           Un atelier indépendant à Nîmes, pensé pour vous accompagner avec des conseils clairs, un suivi rigoureux et
           des interventions soignées.
         </p>
-        <div class="footer__social">
+        
+        <!-- <div class="footer__social">
           <a href="#" class="footer__social-link" aria-label="Facebook">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
@@ -394,7 +417,7 @@
           <a href="#" class="footer__social-link" aria-label="Google Maps">
             <i class="fa-brands fa-google"></i>
           </a>
-        </div>
+        </div> -->
       </div>
 
       <div class="footer__nav">
@@ -416,23 +439,27 @@
           Rejoindre l'Atelier
         </h4>
         <address class="footer__contact-address">
-          123 Rue de l'Automobile<br />
-          30000 Nîmes
+          101 Chemin du mas de cheylon<br />
+          30900 Nîmes
         </address>
         <p class="footer__contact-phone">
           <i class="fa-solid fa-phone"></i>
-          <a href="tel:0412345678">04 12 34 56 78</a>
+          <a href="tel:0449050536">04 49 05 05 36</a>
+        </p>
+        <p class="footer__contact-phone">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:0751304588">07 51 30 45 88</a>
         </p>
         <p class="footer__contact-email">
           <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:contact@halauto.fr">contact@halauto.fr</a>
+          <a href="mailto:hal.auto30@gmail.com">hal.auto30@gmail.com</a>
         </p>
       </div>
     </div>
 
     <div class="footer__bottom">
       <p class="footer__copyright">
-        &copy; <span id="footerYear"></span> HAL AUTO - Tous droits réservés.
+        &copy; <span id="footerYear"></span> <span class="brand-hal">HAL</span> <span class="brand-auto">AUTO</span> - Tous droits réservés.
       </p>
       <div class="footer__legal">
         <a href="mentions-legales.html" class="footer__legal-link">Mentions Légales</a>
